@@ -8,19 +8,19 @@ jobs:
     name: Deploying to surge
     steps:
       - uses: actions/checkout@v2
-        
+
       - name: Install NodeJS
         uses: actions/setup-node@v2-beta
         with:
           node-version: 12
-      
+
       - uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install
-        
+
       - name: Build React app
-        run: yarn build
-        
+        run: CI='' yarn build
+
       - name: Install Surge
         run: npm install -g surge
       - name: Run surge
