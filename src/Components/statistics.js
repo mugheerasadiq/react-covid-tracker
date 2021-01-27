@@ -8,7 +8,6 @@ const { Option } = Select;
 const CountryStatistics = ({ resource }) => {
   const countries = resource.countries.read();
   const [flag, setFlag] = useState(false);
-  const [Data, setData] = useState();
   const [countryData, setCountryData] = useState();
 
   const RenderCountries = countries.map((country) => {
@@ -23,7 +22,6 @@ const CountryStatistics = ({ resource }) => {
     const _data = await axios.get(
       `https://covid19.mathdro.id/api/countries/${country}`
     );
-    setData(_data.data);
     setCountryData({
       labels: ["Infected", "Recovered", "Deaths"],
       datasets: [
@@ -52,7 +50,6 @@ const CountryStatistics = ({ resource }) => {
   };
 
   function handleChange(value) {
-    console.log(`selected ${value}`);
     getStatisticsByCountry(value);
   }
 
