@@ -8,7 +8,9 @@
     "@testing-library/user-event": "^12.6.2",
     "antd": "^4.10.3",
     "axios": "^0.21.1",
+    "chart.js": "^2.9.4",
     "react": "0.0.0-experimental-27659559e",
+    "react-chartjs-2": "^2.11.1",
     "react-dom": "0.0.0-experimental-27659559e",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"

@@ -14,3 +14,50 @@ body {
   font-size: 3.75rem;
   color: rgb(8, 73, 75);
 }
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 10px;
+  border-radius: 5%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.insideCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  font-size: 20px;
+}
+
+.insideCard img {
+  width: 70px;
+  height: 56px;
+}
+
+.cardHeading {
+  text-transform: uppercase;
+  letter-spacing: 0.02in;
+  font-weight: 450;
+}
+
+.caseHeading {
+  font-weight: 1000;
+  font-size: 30px;
+}
+
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
