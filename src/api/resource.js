@@ -5,6 +5,11 @@ const getStatistics = async () => {
   return data.data;
 };
 
+const getCountries = async () => {
+  const data = await axios.get("https://covid19.mathdro.id/api/countries");
+  return data.data.countries;
+};
+
 function wrapPromise(promise) {
   let status = "loading";
   let result;
@@ -35,6 +40,7 @@ function wrapPromise(promise) {
 
 export const createResource = () => {
   return {
-    globalSatistics: wrapPromise(getStatistics()),
+    globalStatistics: wrapPromise(getStatistics()),
+    countries: wrapPromise(getCountries()),
   };
 };

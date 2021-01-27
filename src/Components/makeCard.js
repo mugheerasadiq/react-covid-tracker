@@ -7,7 +7,7 @@ const MakeCard = ({ resource }) => {
   const [deaths, setDeaths] = useState(0);
   const [lastUpdate, setLastUpdate] = useState(0);
 
-  const _data = resource.globalSatistics.read();
+  const _data = resource.globalStatistics.read();
 
   useEffect(() => {
     setConfirmed(_data.confirmed);

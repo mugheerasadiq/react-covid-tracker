@@ -5,6 +5,9 @@ body {
 }
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App h1 {
@@ -60,4 +63,18 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.CountryContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CountryContainer h2 {
+  font-family: "Garamond", "Arial", sans-serif;
+  letter-spacing: 0.01in;
+  font-weight: 100;
+  font-size: 3rem;
+  margin: 0;
 }
